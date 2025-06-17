@@ -15,8 +15,8 @@ server.use('/public', publicRoutes) //rotas na porta 8000
 
 server.use(/^(?!\/(public|livros|autores|categorias)).*$/, authenticationMiddleware);
 
-server.use(router) //rotas na prota 3000
+server.use(router) //rotas na rota 3000
 
 server.listen(8000, () => {
-  console.log("API disponível em http://localhost:8000")
+  console.log("Boas-vindas ao AllBooks. Acesse essa API em http://localhost:8000")
 })
